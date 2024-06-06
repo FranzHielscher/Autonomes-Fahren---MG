@@ -1,0 +1,48 @@
+body {
+  width: 100vw;
+}
+
+.cover_image {
+  display: flex;
+  position: absolute;
+  top: 1%;
+  right: 0%;
+  width: 100vw;
+  height: 55vw;
+}
+
+.back_home {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+}
+.back_home_arrow {
+  width: 3vw;
+}
+.heading {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  top: 2%;
+}
+.signetImage {
+  width: 20vw;
+  background-color: none;
+  color: none;
+}
+.burger_menu {
+  width: 3vw;
+  position: absolute;
+  left: 3%;
+  top: 2%;
+}
+.slogan {
+  color: white;
+  position: absolute;
+  display: flex;
+  top: 33vw;
+  left: 3%;
+  font-size: 50px;
+  width: 30vw;
+}
