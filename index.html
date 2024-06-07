@@ -13,13 +13,29 @@
       crossorigin="anonymous"
     />
   </head>
-    <div>
-      <img
-        src="picturesNIcons/autonomes-fahren-header.png"
-        alt="cover"
-        class="cover_image"
-        id="cover"
-      />
+  <body>
+    <img
+      src="picturesNIcons/autonomes-fahren-header.png"
+      alt="cover"
+      class="cover_image"
+      id="cover"
+    />
+    <div class="header">
+      <button class="burger_menu">
+        <div id="menu" class="menu">
+          <ul>
+            <li><a href="index.html">Hauptmenü</a></li>
+            <li><a href="dienstleistung.html">Dienstleistungen</a></li>
+          </ul>
+        </div>
+      </button>
+      <div class="heading">
+        <img
+          src="PicturesNIcons/signetFinal.png"
+          alt="signet"
+          class="signetImage"
+        />
+      </div>
     </div>
     <div class="back_home">
       <a href="#cover"
@@ -29,19 +45,11 @@
           class="back_home_arrow"
       /></a>
     </div>
-    <div class="header">
-        <div class="burger_menu">
-          <img src="PicturesNIcons/burger_menu.jpeg" alt="burger_menu" class="burger_menu">
-        </div>
-        <div class="heading">
-          <img src="PicturesNIcons/signetFinal.png" alt="signet" class="signetImage">
-        </div>
-    </div>
-    <div class="slogan">
-      Einen Schritt voraus - Autonom und grenzenlos
-    </div>
-    <div class="impressum">
-
+    <div class="slogan">Einen Schritt voraus - Autonom und grenzenlos</div>
+    <div class="navBar">
+      <a href="index.html">Startseite</a>
+      <a href="comingsoon.html">Impressum</a>
+      <a href="comingsoon.html">Kontakt</a>
     </div>
     <!--Einbindung von Bootstrap-->
     <script
@@ -54,6 +62,14 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const menuButton = document.querySelector(".burger_menu");
+      const menu = document.getElementById("menu");
+
+      menuButton.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
   </body>
   <!--<a
     href="https://www.flaticon.com/free-icons/drop-down"

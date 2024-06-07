@@ -2,6 +2,13 @@ body {
   width: 100vw;
 }
 
+@font-face {
+  font-family: "Reddit_Mono";
+  src: url(Reddit_Mono/RedditMono-VariableFont_wght.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .cover_image {
   display: flex;
   position: absolute;
@@ -33,16 +40,90 @@ body {
 }
 .burger_menu {
   width: 3vw;
+  height: 3vw;
+  background-image: url("PicturesNIcons/burger_menu.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
   position: absolute;
   left: 3%;
   top: 2%;
 }
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Menü ist standardmäßig ausgeblendet */
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  transition: left 0.3s ease;
+  z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Fügt einen Schatten hinzu */
+}
+
+.menu.show {
+  left: 0; /* Menü wird eingeblendet */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #f0f0f0;
+}
+
 .slogan {
   color: white;
   position: absolute;
   display: flex;
-  top: 33vw;
+  top: 30vw;
   left: 3%;
-  font-size: 50px;
-  width: 30vw;
+  font-size: 3.2vw;
+  max-width: 40vw;
+  font-family: "Reddit_Mono", sans-serif;
+}
+
+.navBar {
+  background-color: rgb(230, 230, 230);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0.5%;
+  height: 3.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 5px 25px;
+  text-decoration: none;
+  font-family: "Reddit_Mono", sans-serif;
+  border-radius: 15px;
+}
+
+.navBar a:hover {
+  background-color: #d0cccc;
 }
