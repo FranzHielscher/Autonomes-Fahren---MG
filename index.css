@@ -15,7 +15,7 @@ body {
   top: 1%;
   right: 0%;
   width: 100vw;
-  height: 55vw;
+  height: 56.5vw;
 }
 
 .back_home {
@@ -47,14 +47,15 @@ body {
   border: none;
   cursor: pointer;
   position: absolute;
-  left: 3%;
+  left: 2%;
   top: 2%;
+  z-index: 10;
 }
 .menu {
   position: fixed;
   top: 0;
-  left: -250px; /* Menü ist standardmäßig ausgeblendet */
-  width: 250px;
+  left: -350px; /* Menü ist standardmäßig ausgeblendet */
+  width: 12vw;
   height: 100vh;
   background-color: #fff;
   transition: left 0.3s ease;
@@ -96,32 +97,109 @@ body {
   position: absolute;
   display: flex;
   top: 30vw;
-  left: 3%;
-  font-size: 3.2vw;
-  max-width: 40vw;
+  left: 2%;
+  font-size: 2.9vw;
+  max-width: 36vw;
   font-family: "Reddit_Mono", sans-serif;
+  border-bottom: 0.2vw solid #fff;
+}
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Reddit_Mono", sans-serif;
+  font-size: 2.5vw;
+}
+.grid {
+  position: absolute;
+  top: 57vw;
+  display: grid;
+  grid-gap: 4vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 0.7fr 2fr 2fr 2fr 0.7fr;
+  justify-content: center;
+  font-size: x-large;
+  max-height: 50vh;
+  padding: 2%;
+  width: 100vw;
+  font-family: "Reddit_Mono", sans-serif;
+  font-size: 1vw;
+}
+.allgemein {
+  grid-row: 1;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: rgba(
+    175,
+    175,
+    175,
+    0.1
+  ); /* Hinzufügen von Transparenz zur Hintergrundfarbe */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 4%;
+  margin: 0;
+  border-radius: 3vw;
+}
+.cars {
+  grid-row: 2;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  border-top: 0.5vw solid #29a4f7;
+  border-bottom: 0.5vw solid #29a4f7;
 }
 
+.future {
+  grid-row: 3;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: rgba(
+    175,
+    175,
+    175,
+    0.1
+  ); /* Hinzufügen von Transparenz zur Hintergrundfarbe */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 4%;
+  border-radius: 3vw;
+}
+
+.pauseButton,
+.continueButton {
+  margin: 1vw;
+  border: none;
+  border-radius: 2vw;
+  margin: 0.5vw;
+  padding: 0.5vw;
+  font-family: "Reddit_Mono", sans-serif;
+  font-size: 1vw;
+  background-color: rgba(175, 175, 175, 0.1);
+}
+.pauseButton:hover,
+.continueButton:hover {
+  opacity: 0.5;
+}
 .navBar {
   background-color: rgb(230, 230, 230);
   overflow: hidden;
   position: fixed;
-  bottom: 0.5%;
-  height: 3.5vh;
+  bottom: 0;
+  height: 2vh;
   width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 10;
 }
 
 .navBar a {
   display: block;
   color: rgb(0, 0, 0);
   text-align: center;
-  padding: 5px 25px;
+  padding: 0.1vw 1.5vw;
   text-decoration: none;
   font-family: "Reddit_Mono", sans-serif;
-  border-radius: 15px;
+  border-radius: 4vw;
+  font-size: 1vw;
 }
 
 .navBar a:hover {

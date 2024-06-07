@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>VisionDrive</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="auto.css" />
     <link rel="stylesheet" href="SASS.scss" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -37,6 +38,65 @@
         />
       </div>
     </div>
+    <div class="slogan">
+      <p>Einen Schritt voraus - Autonom und grenzenlos</p>
+    </div>
+    <!--Informationen zum Unternehmen-->
+    <div class="grid">
+      <div class="allgemein">
+        <p class="headline">Herzlich Willkommen bei VisionDrive</p>
+        <br />
+        <p>
+          Bei VisionDrive öffnen wir Ihnen die Tür zur Welt des autonomen
+          Fahrens! In einer Zeit, in der autonomes Fahren immer relevanter wird,
+          bieten wir nicht nur die Möglichkeit, diese Technologie zu erlernen,
+          sondern sie auch sicher und selbstbewusst anzuwenden.
+        </p>
+        <p>
+          Unsere umfassenden Kommunikationsstrategien, von sozialen Medien bis
+          hin zu traditioneller Werbung, stellen sicher, dass unsere Botschaft
+          vielfältig gehört wird. Intern fördern wir eine agile Arbeitsumgebung
+          und setzen auf Wertschätzung, Innovation und Qualitätssicherung.
+        </p>
+        <p>
+          Unsere Verhaltensrichtlinien sind geprägt von Offenheit, Respekt und
+          Gleichberechtigung, sowohl im Umgang mit Kunden als auch intern. Durch
+          gezielte Zielgruppenanalysen konzentrieren wir uns auf die Bedürfnisse
+          unserer Kunden und bieten Dienstleistungen wie Probefahrten und
+          Fahrsicherheitstrainings an.
+        </p>
+        <p>
+          Bei VisionDrive sind Sie herzlich willkommen – Ihrem Partner für eine
+          sichere und komfortable Fahrt in die Zukunft des autonomen Fahrens!
+        </p>
+      </div>
+      <div class="cars">
+        <section class="formula-1">
+          <p class="ease">Autonom</p>
+          <p class="ease-in-out">Konventionell</p>
+          <p class="ease-in">Oldtimer</p>
+        </section>
+        <button id="continueButton" class="continueButton">Fortsetzen</button>
+        <button id="pauseButton" class="pauseButton">Anhalten</button>
+      </div>
+      <div class="future">
+        <p class="headline">Die Zukunft beginnt jetzt</p>
+        <p>
+          Autonomes Fahren ist die Zukunft der Mobilität. Durch die
+          fortschreitende Entwicklung von Technologien wie künstlicher
+          Intelligenz und maschinellem Lernen werden Fahrzeuge immer
+          intelligenter und sicherer. Autonomes Fahren verspricht nicht nur eine
+          erhöhte Sicherheit auf den Straßen, sondern auch eine effizientere
+          Nutzung von Ressourcen und eine Reduzierung von Verkehrsstaus. Zudem
+          ermöglicht es Menschen, ihre Zeit während der Fahrt sinnvoller zu
+          nutzen, sei es für Arbeit, Entspannung oder soziale Aktivitäten.
+          VisionDrive ist davon überzeugt, dass autonomes Fahren nicht nur eine
+          revolutionäre Veränderung in der Art und Weise, wie wir uns
+          fortbewegen, darstellt, sondern auch eine nachhaltigere und
+          komfortablere Zukunft für uns alle ermöglicht.
+        </p>
+      </div>
+    </div>
     <div class="back_home">
       <a href="#cover"
         ><img
@@ -45,7 +105,6 @@
           class="back_home_arrow"
       /></a>
     </div>
-    <div class="slogan">Einen Schritt voraus - Autonom und grenzenlos</div>
     <div class="navBar">
       <a href="index.html">Startseite</a>
       <a href="comingsoon.html">Impressum</a>
@@ -68,6 +127,38 @@
 
       menuButton.addEventListener("click", () => {
         menu.classList.toggle("show");
+      });
+
+      document
+        .getElementById("pauseButton")
+        .addEventListener("click", function () {
+          var cars = document.querySelectorAll(".formula-1 p");
+          cars.forEach(function (car) {
+            car.style.animationPlayState = "paused";
+          });
+        });
+      document
+        .getElementById("continueButton")
+        .addEventListener("click", function () {
+          var cars = document.querySelectorAll(".formula-1 p");
+          cars.forEach(function (car) {
+            car.style.animationPlayState = "running";
+          });
+        });
+
+      // Annahme: .burger_menu ist das Burger-Menü-Element und .menu ist das Menü-Element
+      var burgerMenu = document.querySelector(".burger_menu");
+      var menuX = document.querySelector(".menu");
+
+      // Event-Listener für das Burger-Menü, um das Menü zu öffnen oder zu schließen
+      burgerMenu.addEventListener("click", function () {
+        // Überprüfen, ob das Menü gerade offen oder geschlossen ist
+        var isOpen = menuX.style.left === "0px";
+
+        // Wenn das Menü geöffnet ist, schließe es
+        if (isOpen) {
+          menuX.style.left = "-350px"; // Setze die Position des Menüs, um es auszublenden
+        }
       });
     </script>
   </body>

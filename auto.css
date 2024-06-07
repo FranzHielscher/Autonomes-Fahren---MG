@@ -1,0 +1,68 @@
+.formula-1 {
+}
+/* Karosserie der Autos */
+
+.formula-1 p {
+  background: #29a4f7;
+  border: 1px solid #333;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  font-size: 1vw;
+  padding: 0.5vw;
+  position: relative;
+  text-align: center;
+  width: 10vw;
+  height: 3vw;
+}
+/* Autoreifen */
+
+.formula-1 p:after,
+.formula-1 p:before {
+  position: absolute;
+  color: black;
+  content: "●";
+  font-size: 3.5vw;
+  width: 2vw;
+  height: 4vw;
+  top: 0.5vw;
+}
+
+.formula-1 p {
+  animation: rennen 5s infinite 3s;
+  margin-bottom: 5vw;
+  margin-top: 3vw;
+}
+
+.formula-1 p:after {
+  right: 0.7vw;
+}
+
+.formula-1 p:before {
+  left: 0.7vw;
+}
+
+.formula-1 .ease-in {
+  background: #c2e9ff;
+}
+
+.formula-1 .ease-in-out {
+  background: #d15a5a;
+}
+
+.formula-1 .ease-in {
+  animation-timing-function: ease-in;
+}
+
+.formula-1 .ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes rennen {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(60em);
+  }
+}
