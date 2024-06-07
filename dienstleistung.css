@@ -1,99 +1,98 @@
 body {
-    background-image: url('PicturesNIcons/autonomes-fahren-header.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .foreground {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20vh;
-  }
-  .card {
-    background-color: rgba(255, 255, 255, 0.8); 
-    border: 2px solid #ddd; 
-    border-radius: 10px; 
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  .card:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .card a {
-    text-decoration: none;
-    color: inherit; 
-  }
-  .card a:hover {
-    color: inherit;
-  }
-  .card-img-top {
-    border-radius: 10px 10px 0 0;
-    height: 200px;
-  }
-  .header {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    top: 2%;
-  }
-  .signetImage {
-    width: 20vw;
-    background-color: none;
-    color: none;
-  }
-  .burger_menu {
-    width: 3vw;
-    height: 3vw;
-    background-image: url('PicturesNIcons/burger_menu.jpeg');
-    background-size: cover;
-    background-position: center;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    left: 3%;
-    top: 2%;
+  background-image: url("PicturesNIcons/autonomes-fahren-header.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.foreground {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20vh;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+.card a:hover {
+  color: inherit;
+}
+.card-img-top {
+  border-radius: 10px 10px 0 0;
+  height: 200px;
+}
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  top: 2%;
+}
+.signetImage {
+  width: 20vw;
+  background-color: none;
+  color: none;
+}
+.burger_menu {
+  width: 3vw;
+  height: 3vw;
+  background-image: url("PicturesNIcons/burger_menu.jpeg");
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  left: 3%;
+  top: 2%;
 }
 .menu {
-    position: fixed;
-    top: 0;
-    left: -250px; /* Menü ist standardmäßig ausgeblendet */
-    width: 250px;
-    height: 100%;
-    background-color: #fff;
-    transition: left 0.3s ease;
-    z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Fügt einen Schatten hinzu */
-  }
-  
-  .menu.show {
-    left: 0; /* Menü wird eingeblendet */
-  }
-  
-  .menu ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .menu ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .menu ul li:last-child {
-    border-bottom: none;
-  }
-  
-  .menu ul li a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .menu ul li a:hover {
-    background-color: #f0f0f0;
-  }
-  
+  position: fixed;
+  top: 0;
+  left: -250px; /* Menü ist standardmäßig ausgeblendet */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  transition: left 0.3s ease;
+  z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Fügt einen Schatten hinzu */
+}
+
+.menu.show {
+  left: 0; /* Menü wird eingeblendet */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu ul li:last-child {
+  border-bottom: none;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  background-color: #f0f0f0;
+}

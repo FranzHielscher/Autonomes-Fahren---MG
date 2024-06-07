@@ -1,10 +1,11 @@
 body {
   width: 100vw;
+  height: 100vh;
 }
 
 @font-face {
   font-family: "Reddit_Mono";
-  src: url(Reddit_Mono/RedditMono-VariableFont_wght.ttf) format("truetype");
+  src: url(RedditMono-VariableFont_wght.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -54,13 +55,15 @@ body {
 .menu {
   position: fixed;
   top: 0;
-  left: -350px; /* Menü ist standardmäßig ausgeblendet */
-  width: 12vw;
-  height: 100vh;
+  left: -250px; /* Menü ist standardmäßig ausgeblendet */
+  width: 250px;
+  height: 100%;
   background-color: #fff;
   transition: left 0.3s ease;
   z-index: 1000; /* Stellt sicher, dass das Menü über anderen Elementen liegt */
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Fügt einen Schatten hinzu */
+  font-family: "Reddit_Mono", sans-serif;
+  font-size: 1vw;
 }
 
 .menu.show {
@@ -181,6 +184,7 @@ body {
 .navBar {
   background-color: rgb(230, 230, 230);
   overflow: hidden;
+  bottom: 2%;
   position: fixed;
   bottom: 0;
   height: 2vh;
