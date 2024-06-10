@@ -4,6 +4,13 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+@font-face {
+  font-family: "Reddit_Mono";
+  src: url(RedditMono-VariableFont_wght.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .foreground {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
